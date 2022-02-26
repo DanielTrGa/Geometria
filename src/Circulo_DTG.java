@@ -7,6 +7,10 @@ public class Circulo_DTG extends FiguraGeometrica_DTG {
 	public Circulo_DTG(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+		
+		if ( radio < 0 ) {
+			radio = Math.abs(radio);
+		}
 	}
 
 	@Override
